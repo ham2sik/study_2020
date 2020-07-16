@@ -1,4 +1,4 @@
-// 입력 받은 10진수를 16진수로 출력하는 프로그램을 작성하십시오.
+// https://level.goorm.io/exam/43226/16%EC%A7%84%EC%88%98/quiz/1
 
 rl.on("line", function(line) {
 	console.log(typeof line, line);
