@@ -7,16 +7,11 @@ function solution(people, limit) {
     var minWeightNum  = people.length - 1;
     
     for (let i = 0; i < people.length; i ++) {
-        if (i < minWeightNum) {
-            if (people[i] + people[minWeightNum] > limit) {
-                answer ++;
-            } else {
-                answer ++;
+        if (i <= minWeightNum) {
+            if (people[i] + people[minWeightNum] <= limit) {
                 minWeightNum --;
             }
-        } else if (i == minWeightNum) {
             answer ++;
-            break;
         } else {
             break;
         }
